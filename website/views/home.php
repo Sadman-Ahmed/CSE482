@@ -17,7 +17,7 @@
 	    	<td align="center"><a href="login.php">login</a></td>
 		</tr>
 </table>
-<img src="../img/1.jpeg" height="576p" width="100%"><br><br>
+<img src="../assests/img/1.jpeg" height="576p" width="100%"><br><br>
 <div height="40px"></div>
 <footer>
 	<hr>
