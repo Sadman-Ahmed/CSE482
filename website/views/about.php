@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>About Me</title>
-  <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
   	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">

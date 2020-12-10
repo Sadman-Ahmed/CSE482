@@ -3,7 +3,7 @@
 <head>
 	<title>Register Page</title>
 	<title>login Page</title>
-	<link rel="stylesheet" href="../css/master.css">
+	<link rel="stylesheet" href="../assets/css/master.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -92,15 +92,10 @@
 	  <tr>
 	    <td class="td"></td>
 	    <td class="td"><button name="submit" type="submit" id="button">Submit</button></td>
-
 	  </tr>
-
 	</table>
 </form>
-
-
 <br><br>
-
 <footer>
 	<hr>
 	<div width="100%" align="center"> &copy; 2020 Sadman Ahmed. All Rights Reserved</div>

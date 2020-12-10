@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Sadman's Website</title>
-  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">

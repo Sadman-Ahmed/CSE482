@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <?php
-
-?>
-<?php
   session_start();
   if (isset($_COOKIE["cookieSet"])) {
     header("Location:dashboard.php");
   }
-
-
-
 ?>
 <html>
 <head>
 	<title>login Page</title>
-  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../assets/css/master.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -37,9 +31,7 @@
   	   echo "<h2 align='center'>Invalid username or Password</h2>";
   	 }
    }
-
 ?>
-
 </div>
 <div >
 	<form action="../models/verify.php" method="post">
@@ -62,13 +54,11 @@
 	</form>
 </div>
 <br><br><br><br><br><br>
-
-  <a class="td"href="register.php">Registration</a><br><br><br><br><br>
-	<footer>
-		<hr>
-		<div width="100%" align="center"> &copy; 2020 Sadman Ahmed. All Rights Reserved</div>
-	</footer>
-
+<a class="td"href="register.php">Registration</a><br><br><br><br><br>
+<footer>
+	<hr>
+	<div width="100%" align="center"> &copy; 2020 Sadman Ahmed. All Rights Reserved</div>
+</footer>
 </body>
 </html>
 <?php

@@ -3,7 +3,7 @@
 <head>
 	<title>Details Page</title>
 	<title>login Page</title>
-	<link rel="stylesheet" href="../css/master.css">
+	<link rel="stylesheet" href="../assets/css/master.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -13,9 +13,9 @@
 	<table width="100%" cellspacing="0" height="50">
 		<tr>
 			<td align="center"><a href="home.php">Home</a></td>
-	    	<td align="center"><a href="about.php">about</a></td>
-	    	<td align="center"><a href="contact.php">contact</a></td>
-	    	<td align="center"><a href="login.php">login</a></td>
+	    <td align="center"><a href="about.php">about</a></td>
+	    <td align="center"><a href="contact.php">contact</a></td>
+	    <td align="center"><a href="login.php">login</a></td>
 		</tr>
 </table><br><br>
 <form class="" action="register.php" method="post">
@@ -42,15 +42,12 @@
 				else{
 					echo "any one must be selected";
 				}
-
 				?>
 			</td>
-
 		</tr>
 		<tr height="50px">
 			<td class="td"><label>Programming Skils:</label></td>
 			<td class="td" >
-
 				<?php
 				if (isset($_POST['Java']) || isset($_POST['Android']) || isset($_POST['Ruby'])|| isset($_POST['Net'])){
 					if (isset($_POST['Java'])) {
@@ -69,7 +66,6 @@
 						$Net = $_POST['Net'];
 						echo $Net."<br>";
 					}
-
 				}
 				else{
 					if (isset($_POST['submit'])) {
@@ -94,19 +90,13 @@
 		<tr>
 			<td class="td"></td>
 			<td class="td"><button id="button">Go Back</button></td>
-
 		</tr>
-
 	</table>
-
 </form>
-
 <br><br>
-
 <footer>
 	<hr>
 	<div width="100%" align="center"> &copy; 2020 Sadman Ahmed. All Rights Reserved</div>
 </footer>
-
 </body>
 </html>
