@@ -24,7 +24,7 @@
   <?php
   if (isset($_GET['success'])) {
     if($_GET['success'] == 'valid_user'){
-       echo "<h2 align='center'> Your comment has been successfully noted. we will cantact with you soon</h2>";
+       echo "<h2 align='center'> Your comment has been successfully noted. we will contact with you soon</h2>";
      }
    }
 ?>

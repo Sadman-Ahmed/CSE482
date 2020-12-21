@@ -28,23 +28,23 @@
 ?>
 </div>
 
-<form class="" action="../models/regverify.php" method="POST">
+<form name="regform" action="../models/regverify.php" method="POST" onsubmit="return formValidation();">
 	<table class="table" align="center" width="50%" cellpadding="10">
 	  <tr>
 	    <td class="td"><label>Name:</label></td>
-	    <td class="td" ><input type="text" name="name" id="name" required></td>
+	    <td class="td" ><input type="text" name="name" id="name"><label class="label" id="nameError"></label></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Username:</label></td>
-	    <td class="td"><input type="text" name="uname" required></td>
+	    <td class="td"><input type="text" name="uname"><label id="usernameError"></label></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Password:</label></td>
-	    <td class="td"><input type="password" name="psw" required></td>
+	    <td class="td"><input type="password" name="psw" ><label id="passwordError"></label></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Re-Type Password:</label></td>
-	    <td class="td"><input type="password" required></td>
+	    <td class="td"><input type="password" name = "repsw"><label id="repasswordError"></label></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Gender:</label></td>
@@ -54,7 +54,8 @@
 	      <input  value="Female" type="radio" name="gender">
 	      <label>Female</label>
 	      <input value="Other" type="radio" name="gender">
-	      <label>Other</label>
+	      <label>Other</label><br><brz><label id="genderError"></label>
+
 	    </td>
 	  </tr>
 	  <tr height="50px">
@@ -72,11 +73,11 @@
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Contact no:</label></td>
-	    <td class="td"><input type="number" name="number" required></td>
+	    <td class="td"><input type="text" name="number"><label id="contactError"></label></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>Email:</label></td>
-	    <td class="td"><input type="text" name="email" required></td>
+	    <td class="td"><input type="text" name="email"></td>
 	  </tr>
 	  <tr>
 	    <td class="td"><label>College:</label></td>
@@ -102,4 +103,91 @@
 </footer>
 
 </body>
+<script type="text/javascript">
+
+function formValidation(){
+	var name = document.forms["regform"]["name"].value;
+	var uname = document.forms["regform"]["uname"].value;
+	var password = document.forms["regform"]["psw"].value;
+	var repassword = document.forms["regform"]["repsw"].value;
+	var gender = document.forms["regform"]["gender"].value;
+	var contact = document.forms["regform"]["number"].value;
+	var flag = true;
+
+	//name validation
+
+	if(name == ''){
+		document.getElementById('nameError').innerHTML = "Name cannot be empty";
+		flag = false;
+	}
+
+	//username validation
+
+	if(uname == ''){
+		document.getElementById('usernameError').innerHTML = "Username cannot be empty";
+		flag = false;
+	}
+
+	for(var i = 0; i< uname.length; i++){
+		if(uname[i] == ' '){
+			document.getElementById('usernameError').innerHTML = "Username cannot contain whitespace";
+			flag = false;
+			break;
+		}
+		else{
+			continue;
+		}
+	}
+
+	//password validation
+
+	var length = password.length;
+	if(length <8 || length>32){
+		document.getElementById('passwordError').innerHTML = "Password length must be between 8-32 characters";
+		flag = false;
+	}
+
+	//password match
+
+	if(password != repassword){
+		document.getElementById('repasswordError').innerHTML = "Passwords donot match";
+		flag = false;
+	}
+
+	//gender validation
+
+	if(gender == ''){
+		document.getElementById('genderError').innerHTML = "Gender is not selected";
+		flag = false;
+	}
+
+	//contact validation
+
+	if(contact == ''){
+		document.getElementById('contactError').innerHTML = "Contact cannot be empty";
+		flag = false;
+
+	}
+	for(var i = 0; i< contact.length; i++){
+		if(contact[i] == '0' || contact[i] == '1'
+			||contact[i] == '2'
+			||contact[i] == '3'
+			||contact[i] == '4'
+			||contact[i] == '5'
+			||contact[i] == '6'
+			||contact[i] == '7'
+			||contact[i] == '8'
+			||contact[i] == '9'){
+			continue;
+		}
+		else{
+			document.getElementById('contactError').innerHTML = "Contact can only contain numbers";
+			flag = false;
+			break;
+		}
+	}
+	return flag;
+}
+
+</script>
 </html>

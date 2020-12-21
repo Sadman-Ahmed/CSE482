@@ -11,3 +11,15 @@ v1.1:
 v1.1.1: 
 	//img problem resolved
 	
+update home:
+	//img problem resolved again
+	
+v1.1.2:
+	//minor spelling corrections
+	
+v2.0: 
+	//registration form validation with javascript all done
+
+v2.0.1:
+	//registration form validation with javascript all done - with comments
+
