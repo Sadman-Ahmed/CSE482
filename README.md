@@ -22,4 +22,7 @@ v2.0:
 
 v2.0.1:
 	//registration form validation with javascript all done - with comments
+	
+v3.0: 
+	//dashboard page now interacts with live search
 

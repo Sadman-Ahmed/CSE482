@@ -41,6 +41,15 @@ table{
   border-radius: 1em;
   overflow: hidden;
 }
+/* .table{
+  font-family: 'Raleway';
+  font-weight: bolder;
+  /* background-color: #34626c; */
+  /*border-collapse: collapse;
+  border-radius: 0em;
+  overflow: hidden;
+  width: 30px;
+} */
 a{
   text-decoration: none;
   font-size: 20px;
@@ -58,6 +67,10 @@ td{
   font-size: 20px;
   padding: 1em;
   border-bottom: 2px solid white;
+}
+
+.search{
+  padding: 20px 20px;
 }
 
 .mail{
@@ -103,6 +116,8 @@ td{
   overflow: hidden;
 }
 
+
+
 .td{
   font-family: 'Raleway';
   font-weight: bolder;
@@ -110,6 +125,7 @@ td{
   font-size: 20px;
   padding: 1em;
   border-bottom: none;
+  background-color: #fff3e2;
 }
 
 input[type=text], input[type=password], input[type=number], textarea {
